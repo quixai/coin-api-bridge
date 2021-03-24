@@ -18,8 +18,8 @@ url = 'https://rest.coinapi.io/v1/exchangerate/{0}?filter_asset_id={1}'.format(f
 headers = {'X-CoinAPI-Key': '{placeholder:token}'}
 ```
 
-## Setting up connection to Quix Kafka topic
-Use **Library** to generate code snippet to connect to Quix Kafka topic. You should get following code with placehodlers replaced:
+## Setting up aconnection to Quix Kafka topic
+Use **Library** to generate code snippet to connect to Quix Kafka topic. You should get the following code with placeholders replaced:
 ```python
 # Create a client factory. Factory helps you create StreamingClient (see below) a little bit easier
 security = SecurityOptions('{placeholder:broker.security.certificatepath}', "{placeholder:broker.security.username}", "{placeholder:broker.security.password}")
@@ -33,10 +33,10 @@ We set some metadata to Quix SDK stream like name and location in data catalogue
 ```python
 stream = output_topic.create_stream("coin-api")
 
-# Give the stream human readable name. This name will appear in data catalogue.
+# Give the stream a human-readable name. This name will appear in the data catalogue.
 stream.properties.name = "Coin API"
 
-# Save stream in specific folder in data catalogue to help organize your workspace.
+# Save stream in a specific folder in the data catalogue to help organize your workspace.
 stream.properties.location = "/Coin API"
 ```
 
@@ -64,7 +64,7 @@ while True:
 ```
 
 # Result
-In Quix Data catalogue (as long as you have enabled **persistence** for the topic) you should see new stream called **Coin API**.
+In Quix Data catalogue (as long as you have enabled **persistence** for the topic) you should see a new stream called **Coin API**.
 
 [![](img/data-catalogue.png )](img/data-catalogue.png "Data catalogue") 
 [![](img/visualize.png )](img/visualize.png "Visualize") 
