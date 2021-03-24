@@ -65,3 +65,6 @@ while True:
 
 # Result
 In Quix Data catalogue (as long as you have enabled **persistence** for the topic) you should see new stream called **Coin API**.
+
+[![](img/data-catalogue.png )](img/data-catalogue.png "Data catalogue") 
+[![](img/visualize.png )](img/visualize.png "Visualize") 
