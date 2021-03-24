@@ -18,7 +18,7 @@ url = 'https://rest.coinapi.io/v1/exchangerate/{0}?filter_asset_id={1}'.format(f
 headers = {'X-CoinAPI-Key': '{placeholder:token}'}
 ```
 
-## Setting up aconnection to Quix Kafka topic
+## Setting up a connection to Quix Kafka topic
 Use **Library** to generate code snippet to connect to Quix Kafka topic. You should get the following code with placeholders replaced:
 ```python
 # Create a client factory. Factory helps you create StreamingClient (see below) a little bit easier
